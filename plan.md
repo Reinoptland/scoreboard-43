@@ -37,6 +37,14 @@ What do we need to do:
 - Pass the function down to each Player component, so they can change the state of the Scoreboard
 - This is called `using a callback prop`
 
+## As a group of players I want to be able to choose sorting by score or sorting by player name
+
+- We need to keep track of how we are sorting:
+  - score or name -> string
+  - static or dynamic? -> dynamic -> store as State
+- Users can choose to sort by score or name (UI something people can click)
+- Write some logic that if sorting by name is selected it sorts by name
+
 ## Secret other benefits
 
 - Talk about this later
