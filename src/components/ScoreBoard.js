@@ -12,10 +12,16 @@ export default function ScoreBoard() {
     { id: 4, name: "Rein", score: 1 },
   ];
 
+  function compareScore(playerA, playerB) {
+    return playerB.score - playerA.score;
+  }
+
+  const sortedPlayers = [...players].sort(compareScore);
+
   return (
     <div>
       <h1>I AM A SCOREBOARD</h1>
-      {players.map((player) => {
+      {sortedPlayers.map((player) => {
         console.log(player);
         return (
           <Player key={player.id} name={player.name} score={player.score} />
