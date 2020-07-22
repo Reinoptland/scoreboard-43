@@ -4,11 +4,11 @@
 
 What do we need?
 
-- Scoreboard -> Component -> has some player child components
-- Player -> Component
+- X Scoreboard -> Component -> has some player child components
+- X Player -> Component
   - data
     - score (datatype: number) -> dynamic -> state
-    - name (datatype: string) -> static -> props
+    - X name (datatype: string) -> static -> props
 
 ## Lifting state ..?
 
