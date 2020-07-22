@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Player(props) {
-  console.log("WHAT ARE PROPS?", props);
+  // console.log("WHAT ARE PROPS?", props);
 
   function handleClick() {
     // 4. call our callback prop (the function can change score)
