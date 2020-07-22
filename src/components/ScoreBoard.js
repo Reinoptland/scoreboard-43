@@ -5,10 +5,10 @@ export default function ScoreBoard() {
   return (
     <div>
       <h1>I AM A SCOREBOARD</h1>
-      <Player />
-      <Player />
-      <Player />
-      <Player />
+      <Player name="Rein" />
+      <Player name="David" />
+      <Player name="Karla" />
+      <Player name="Lisa" />
     </div>
   );
 }
