@@ -18,6 +18,10 @@ export default function ScoreBoard() {
     return playerB.score - playerA.score;
   }
 
+  function compareName(playerA, playerB) {
+    return playerA.name.localeCompare(playerB.name);
+  }
+
   // 1. define our function that is going to change the score
   function incrementScore(playerId) {
     // 6. Does this function get called when you click the + button
@@ -58,10 +62,15 @@ export default function ScoreBoard() {
     sortedPlayers = [...players].sort(compareScore);
   } else if (sortBy === "name") {
     // TODO: sort by name
+    sortedPlayers = [...players].sort(compareName);
   }
 
   function handleChange(event) {
+    // what did the user do? event
+    // what did the user click: event.target
+    // what did the user select, it is stored in event.target.value
     console.log("WHAT IS SELECTED:", event.target.value);
+    setSortBy(event.target.value);
   }
 
   return (
