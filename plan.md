@@ -27,11 +27,15 @@ What do we need to do:
 - What datatype are we going to use to track the scores?
 - Track the state of the players in the parent -> add state
 - Pass the state down to the children (as props)
+- Sort players
 
 2. A child needs to be able to change the state in the parent
 
 - Need to implement the + button again
-- some more steps ...
+- Make a + button
+- Define a function that can change score of a player in ScoreBoard
+- Pass the function down to each Player component, so they can change the state of the Scoreboard
+- This is called `using a callback prop`
 
 ## Secret other benefits
 
