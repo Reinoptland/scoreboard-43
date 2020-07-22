@@ -9,7 +9,6 @@ export default function ScoreBoard() {
     { id: 1, name: "Karla", score: 6 },
     { id: 2, name: "David", score: 2 },
     { id: 3, name: "Matias", score: 4 },
-    { id: 4, name: "Rein", score: 1 },
   ]);
 
   const [sortBy, setSortBy] = useState("score");

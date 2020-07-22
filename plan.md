@@ -47,4 +47,5 @@ What do we need to do:
 
 ## Secret other benefits
 
-- Talk about this later
+- now that players are stored as an array, we can add new player
+- we remove players
