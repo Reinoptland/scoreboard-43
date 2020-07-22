@@ -16,10 +16,13 @@ export default function ScoreBoard() {
     return playerB.score - playerA.score;
   }
 
+  // 1. define our function that is going to change the score
   function incrementScore(playerId) {
+    // 6. Does this function get called when you click the + button
     console.log("I WAS DEFINED IN SCOREBOARD");
+    // 7. Did we get the id of the player?
     console.log("WHO SHOULD GET A POINT", playerId);
-    // to do later, write logic to give a player a point
+    // 8. Write logic to change the score of a player
   }
 
   const sortedPlayers = [...players].sort(compareScore);
@@ -35,6 +38,8 @@ export default function ScoreBoard() {
             id={player.id}
             name={player.name}
             score={player.score}
+            // 2. pass our function that can change score to the child
+            // component (as a prop, a callback)
             incrementScore={incrementScore}
           />
         );
